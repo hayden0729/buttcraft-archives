@@ -11,6 +11,9 @@ h1, h2 {
 
 h1, h2, h3, h4, h5 {
     width: 100%;
+}
+
+h1, h2, h3, h4 {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -142,15 +145,15 @@ h5 {
     display: flex;
     position: absolute;
     height: 100%;
-    animation: scroller_move 60s linear infinite;
+    animation: scroller_move 60s linear 0.01s infinite;
 }
 
 .scroll_speed_1 {
-    animation: scroller_move 60s linear infinite;
+    animation: scroller_move 60s linear 0.01s infinite;
 }
 
 .scroll_speed_2 {
-    animation: scroller_move 30s linear infinite;
+    animation: scroller_move 30s linear 0.01s infinite;
 }
 
 .scroller_subset {
