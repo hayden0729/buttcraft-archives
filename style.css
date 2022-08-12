@@ -142,15 +142,15 @@ h5 {
     display: flex;
     position: absolute;
     height: 100%;
-    animation: scrollermove 60s linear infinite;
+    animation: scroller_move 60s linear infinite;
 }
 
 .scroll_speed_1 {
-    animation: scrollermove 60s linear infinite;
+    animation: scroller_move 60s linear infinite;
 }
 
 .scroll_speed_2 {
-    animation: scrollermove 30s linear infinite;
+    animation: scroller_move 30s linear infinite;
 }
 
 .scroller_subset {
@@ -162,7 +162,16 @@ img {
     max-height: 100%;
 }
 
-@keyframes scrollermove {
+@-webkit-keyframes scroller_move {
+    0% {
+        -webkit-transform: translate(0, 0);
+    }
+    100% {
+        -webkit-transform: translate(-50%, 0);
+    }
+}
+
+@keyframes scroller_move {
     0% {
         transform: translate(0, 0);
     }
